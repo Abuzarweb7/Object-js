@@ -195,9 +195,65 @@
 // 9. Calculate Cart Total
 // Given an array of cart items ({name, price, quantity}), display a full cart with
 // totals using DOM.
+// const cart = document.querySelector("#cart");
+//     let item1Name = "Apple";
+//     let item1Price = 100;
+//     let item1Qty = 2;
+//     let item1Total = item1Price * item1Qty;
+
+//     let item2Name = "Banana";
+//     let item2Price = 50;
+//     let item2Qty = 5;
+//     let item2Total = item2Price * item2Qty;
+
+//     let item3Name = "Milk";
+//     let item3Price = 120;
+//     let item3Qty = 1;
+//     let item3Total = item3Price * item3Qty;
+
+//     // Sabka total
+//     let grandTotal = item1Total + item2Total + item3Total;
+
+  
+//   cart .innerHTML  +=     "<p>" + item1Name + " - " + item1Price + " x " + item1Qty + " = " + item1Total + "</p>" +
+//       "<p>" + item2Name + " - " + item2Price + " x " + item2Qty + " = " + item2Total + "</p>" +
+//       "<p>" + item3Name + " - " + item3Price + " x " + item3Qty + " = " + item3Total + "</p>" +
+//       "<hr>" +
+//       "<h3>Total: " + grandTotal + "</h3>";
 
 
+// Q10
 
+// const listDiv = document.getElementById("list");
+//     const fruitsCheckbox = document.getElementById("fruits");
+//     const veggiesCheckbox = document.getElementById("veggies");
+
+//     // Items
+//     const apple = "Apple";
+//     const banana = "Banana";
+//     const carrot = "Carrot";
+//     const spinach = "Spinach";
+
+//     function showList() {
+//       listDiv.innerHTML = ""; // 
+
+//       if (fruitsCheckbox.checked) {
+//         listDiv.innerHTML += "<p>" + apple + "</p>";
+//         listDiv.innerHTML += "<p>" + banana + "</p>";
+//       }
+
+//       if (veggiesCheckbox.checked) {
+//         listDiv.innerHTML += "<p>" + carrot + "</p>";
+//         listDiv.innerHTML += "<p>" + spinach + "</p>";
+//       }
+//     }
+
+    
+//     showList();
+
+    
+//     fruitsCheckbox.onchange = showList;
+//     veggiesCheckbox.onchange = showList;
 
 
 
