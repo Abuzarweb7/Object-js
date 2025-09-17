@@ -257,9 +257,66 @@
 
 
 
+    // Q11
+// const input = document.querySelector("#input");
+// const list = document.querySelector("ol");
+// const fruits = ["Apple", "Mango", "Banana", "Orange", "Grapes"];
+
+// fruits.addEventListener ( 'input' , function(){
+
+// fruits.forEach(function(){
+//     input.value += `<li> ${fruits}</li>` 
+    
+// })
+
+// })
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Q12
+
+const input = document.querySelector("#input");
+const list = document.querySelector("ol");
+const task = [];
+
+
+function render() {
+  list.innerHTML = ""; 
+  for (let i = 0; i < task.length; i++) {
+    input.value = ""; 
+    list.innerHTML += `
+      <li>
+        ${task[i].title} - ${task[i].completed}
+        <button>✕</button>
+         <button onclick="remove(${i})">Remove</button>
+      </li>
+    `;
+  }
+}
+
+function addTodo() {
+  task.push({ title: input.value, completed: false });
+  render();
+}
+
+
+function remove(index){
+task.splice(index,1)
+render()
+}
