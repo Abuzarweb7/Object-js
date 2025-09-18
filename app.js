@@ -291,32 +291,66 @@
 
 // Q12
 
-const input = document.querySelector("#input");
+// const input = document.querySelector("#input");
+// const list = document.querySelector("ol");
+// const task = [];
+
+
+// function render() {
+//   list.innerHTML = ""; 
+//   for (let i = 0; i < task.length; i++) {
+//     input.value = ""; 
+//     list.innerHTML += `
+//       <li>
+//         ${task[i].title} - ${task[i].completed}
+//         <button>✕</button>
+//          <button onclick="remove(${i})">Remove</button>
+//       </li>
+//     `;
+//   }
+// }
+
+// function addTodo() {
+//   task.push({ title: input.value, completed: false });
+//   render();
+// }
+
+
+// function remove(index){
+// task.splice(index,1)
+// render()
+// }
+
+
+const userName = document.querySelector("#inputName");
+const userEmail = document.querySelector("#inputEmail");
+const userCity = document.querySelector("#inputCity");
+const userAge = document.querySelector("#inputAge")
 const list = document.querySelector("ol");
-const task = [];
+const user = [] 
 
 
-function render() {
-  list.innerHTML = ""; 
-  for (let i = 0; i < task.length; i++) {
-    input.value = ""; 
-    list.innerHTML += `
-      <li>
-        ${task[i].title} - ${task[i].completed}
-        <button>✕</button>
-         <button onclick="remove(${i})">Remove</button>
-      </li>
-    `;
+
+function addUserObj(){
+  
+  let userObj = {
+    name: userName.value,
+    Email:userEmail.value,
+    City: userCity.value,
+    Age:userAge.value
   }
-}
-
-function addTodo() {
-  task.push({ title: input.value, completed: false });
-  render();
-}
+  console.log(userObj);
 
 
-function remove(index){
-task.splice(index,1)
-render()
+user.push(userObj)
+list.innerHTML += `<li>${userObj.name}  
+<br/>
+<br/>
+ ${userObj.Email} 
+ <br/>
+ <br/>
+ ${userObj.City}
+ <br/>
+ <br/> 
+  ${userObj.Age}</li>`
 }
