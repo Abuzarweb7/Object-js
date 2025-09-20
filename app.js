@@ -322,35 +322,82 @@
 // }
 
 
+// const userName = document.querySelector("#inputName");
+// const userEmail = document.querySelector("#inputEmail");
+// const userCity = document.querySelector("#inputCity");
+// const userAge = document.querySelector("#inputAge")
+// const list = document.querySelector("ol");
+// const user = [] 
+
+
+
+// function addUserObj(){
+  
+//   let userObj = {
+//     name: userName.value,
+//     Email:userEmail.value,
+//     City: userCity.value,
+//     Age:userAge.value
+//   }
+//   console.log(userObj);
+
+
+// user.push(userObj)
+// list.innerHTML += `<li>${userObj.name}  
+// <br/>
+// <br/>
+//  ${userObj.Email} 
+//  <br/>
+//  <br/>
+//  ${userObj.City}
+//  <br/>
+//  <br/> 
+//   ${userObj.Age}</li>`
+// }
+
+// Q14
+
 const userName = document.querySelector("#inputName");
 const userEmail = document.querySelector("#inputEmail");
 const userCity = document.querySelector("#inputCity");
 const userAge = document.querySelector("#inputAge")
-const list = document.querySelector("ol");
+const list = document.querySelector("ul");
 const user = [] 
 
 
-
-function addUserObj(){
   
-  let userObj = {
-    name: userName.value,
-    Email:userEmail.value,
-    City: userCity.value,
-    Age:userAge.value
+ 
+
+
+  function userObj(){
+    list.innerHTML = ""
+    
+    let userObj = {
+      name: userName.value,
+      Email:userEmail.value,
+      City: userCity.value,
+      Age:userAge.value
+    }
+    userName.value = "";
+  userEmail.value = "";
+  userCity.value = "";
+  userAge.value = "";
+
+    console.log(userObj);
+  user.push(userObj);
+
+    list.innerHTML += ` Name: ${userObj.name} <br/>
+    <br/>
+        Email: ${userObj.Email} <br/>
+        <br/>
+        City: ${userObj.City} <br/>
+        <br/> 
+        Age: ${userObj.Age} <br/>
+            <button onclick="userIndex()" class="button">Edit</button>`
+
   }
-  console.log(userObj);
 
 
-user.push(userObj)
-list.innerHTML += `<li>${userObj.name}  
-<br/>
-<br/>
- ${userObj.Email} 
- <br/>
- <br/>
- ${userObj.City}
- <br/>
- <br/> 
-  ${userObj.Age}</li>`
-}
+// function userIndex(index){
+
+// }
