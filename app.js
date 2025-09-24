@@ -321,6 +321,8 @@
 // render()
 // }
 
+// Q13
+
 
 // const userName = document.querySelector("#inputName");
 // const userEmail = document.querySelector("#inputEmail");
@@ -420,3 +422,40 @@
 //     userAge.value = userIndex.Age;
 //     userCity.value = userIndex.City;
 //   }
+
+// Q15
+
+const table = document.querySelector("#table");
+  const head = document.querySelector("thead");
+  const tbody = document.querySelector("tbody");
+
+  const data = [
+    { Name: "Alice", Age: 25, City: "New York" },
+    { Name: "Bob", Age: 30, City: "Los Angeles" },
+    { Name: "Charlie", Age: 35, City: "Chicago" }
+  ];
+
+
+  const keys = Object.keys(data[0]);  data
+
+  let headerRow = "<tr>";  
+  keys.forEach(key => {
+    headerRow += `<th>${key}</th>`; 
+  });
+  headerRow += "</tr>";  
+
+  head.innerHTML = headerRow;  
+
+
+  let rows = "";  
+
+  data.forEach(objVal => {
+    let row = "<tr>";  
+    keys.forEach(key => {
+      row += `<td>${objVal[key]}</td>`;  
+    });
+    row += "</tr>";  
+    rows += row;  
+  });
+
+  tbody.innerHTML = rows;  
