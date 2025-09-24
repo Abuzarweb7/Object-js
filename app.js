@@ -357,47 +357,66 @@
 
 // Q14
 
-const userName = document.querySelector("#inputName");
-const userEmail = document.querySelector("#inputEmail");
-const userCity = document.querySelector("#inputCity");
-const userAge = document.querySelector("#inputAge")
-const list = document.querySelector("ul");
-const user = [] 
 
-
-  
  
 
+//  const userName = document.querySelector("#inputName");
+//   const userEmail = document.querySelector("#inputEmail");
+//   const userCity = document.querySelector("#inputCity");
+//   const userAge = document.querySelector("#inputAge");
+//   const list = document.querySelector("ul");
+//   const users = [];
 
-  function userObj(){
-    list.innerHTML = ""
+//   function addUser(){
+//     //  list.innerHTML = "";
+//     let userObj = {
+//       Name : userName.value,
+//     Email : userEmail.value,
+//       City : userCity.value,
+//       Age : userAge.value,
+//     }
+//     // console.log(userObj);
     
-    let userObj = {
-      name: userName.value,
-      Email:userEmail.value,
-      City: userCity.value,
-      Age:userAge.value
-    }
-    userName.value = "";
-  userEmail.value = "";
-  userCity.value = "";
-  userAge.value = "";
-
-    console.log(userObj);
-  user.push(userObj);
-
-    list.innerHTML += ` Name: ${userObj.name} <br/>
-    <br/>
-        Email: ${userObj.Email} <br/>
-        <br/>
-        City: ${userObj.City} <br/>
-        <br/> 
-        Age: ${userObj.Age} <br/>
-            <button onclick="userIndex()" class="button">Edit</button>`
-
-  }
+    
+//       userName.value = ""
+//    userEmail.value = ""
+//       userCity.value = ""
+//       userAge.value = ""
+//       users.push(userObj)
+//       renderList()
+//   }
 
 
-// function userIndex(index){
+//   function renderList(){
+   
+//      users.forEach((u,i)=>
+//       {
+     
+//      list.innerHTML =   `<li>
+     
+//       Name :${u.Name}
+//        <br>
+//         <br>
+//       Email :${u.Email}
+//        <br>
+//         <br>
+//       City:${u.City} 
+//        <br>
+//         <br>
+//       Age:${u.Age} 
+//        <br>
+//         <br>
+//         <button onclick="editUser(${i})">Edit</button>
+//       </li>`
+      
+//     })
+//   }
 
-// }
+
+//   function editUser(index){
+//     const userIndex = users[index]
+//     userName.value = userIndex.Name;
+//     userEmail.value = userIndex.Email;
+//     userAge.value = userIndex.Age;
+//     userCity.value = userIndex.City;
+//   }
