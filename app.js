@@ -425,37 +425,111 @@
 
 // Q15
 
-const table = document.querySelector("#table");
-  const head = document.querySelector("thead");
-  const tbody = document.querySelector("tbody");
+// const table = document.querySelector("#table");
+//   const head = document.querySelector("thead");
+//   const tbody = document.querySelector("tbody");
 
-  const data = [
-    { Name: "Alice", Age: 25, City: "New York" },
-    { Name: "Bob", Age: 30, City: "Los Angeles" },
-    { Name: "Charlie", Age: 35, City: "Chicago" }
-  ];
-
-
-  const keys = Object.keys(data[0]);  data
-
-  let headerRow = "<tr>";  
-  keys.forEach(key => {
-    headerRow += `<th>${key}</th>`; 
-  });
-  headerRow += "</tr>";  
-
-  head.innerHTML = headerRow;  
+//   const data = [
+//     { Name: "Alice", Age: 25, City: "New York" },
+//     { Name: "Bob", Age: 30, City: "Los Angeles" },
+//     { Name: "Charlie", Age: 35, City: "Chicago" }
+//   ];
 
 
-  let rows = "";  
+//   const keys = Object.keys(data[0]);  
 
-  data.forEach(objVal => {
-    let row = "<tr>";  
-    keys.forEach(key => {
-      row += `<td>${objVal[key]}</td>`;  
-    });
-    row += "</tr>";  
-    rows += row;  
-  });
+//   let headerRow = "<tr>";  
+//   keys.forEach(key => {
+//     headerRow += `<th>${key}</th>`; 
+//   });
+//   headerRow += "</tr>";  
 
-  tbody.innerHTML = rows;  
+//   head.innerHTML = headerRow;  
+
+
+//   let rows = "";  
+
+//   data.forEach(objVal => {
+//     let row = "<tr>";  
+//     keys.forEach(key => {
+//       row += `<td>${objVal[key]}</td>`;  
+//     });
+//     row += "</tr>";  
+//     rows += row;  
+//   });
+
+  // tbody.innerHTML = rows;  
+
+
+
+
+  
+
+// Q16
+
+//   let str = "hello";
+//   let farquancy = {};
+// for(let count of str){
+//   if(farquancy[count]){
+// farquancy[count] +=1
+//   }
+//   else{
+//     farquancy[count] = 1
+//   }
+// }
+// console.log(farquancy);
+
+
+// Q17
+// const list = document.querySelector(".list");
+// const categories = [
+//   {
+//     id: 1,
+//     name: "Electronics",
+//     children: [
+//       { id: 2, name: "Mobile", children: [] },
+//       { id: 3, name: "Laptop", children: [] }
+//     ]
+//   },
+//   {
+//     id: 4,
+//     name: "Clothes",
+//     children: [
+//       { id: 5, name: "Shirts", children: [] },
+//       { id: 6, name: "Pants", children: [] }
+//     ]
+//   }
+// ];
+
+
+
+
+//     categories.forEach((val =>{
+//       list.innerHTML += `<li>${val.children[0].name}</li>`
+//       list.innerHTML += `<li>${val.children[1].name}</li>`
+//     }))
+            
+
+// function treeView = 
+
+
+
+
+
+// 18
+// const list = document.querySelector(".list");
+
+//   const students = [
+//     { name: "Ali", grade: 2 },
+//     { name: "Sara", grade: 1 },
+//     { name: "Bilal", grade: 3 }
+//   ];
+
+
+//   students.sort((a,b)=>{
+//    return  a.grade - b.grade   
+//   })
+
+// students.forEach((val =>{
+//   list.innerHTML += `<li> ${val.name} ${val.grade} </li>  `
+// }))
