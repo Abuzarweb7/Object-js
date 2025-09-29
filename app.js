@@ -533,3 +533,52 @@
 // students.forEach((val =>{
 //   list.innerHTML += `<li> ${val.name} ${val.grade} </li>  `
 // }))
+
+
+
+
+// Q19
+// const box = document.querySelector(".box");
+// const input = document.querySelector("#input");
+// let words = ["I love JS", "JS is fun", "Highlight this word"];
+
+
+//   input .addEventListener("input" , ()=>{
+
+//     box.innerHTML = "";
+//     const serach = input.value.toLowerCase()
+    
+
+
+//    words.forEach(val =>{
+//     if(val.toLowerCase().includes(serach)){
+//       box .innerHTML += `<p> ${val} <p>`
+
+    
+//     }
+//    })
+//   })
+
+
+
+// Q20
+// const select = document.querySelector("select");
+// const div = document.querySelector(".code");
+// let country = [
+//   { code: "IN", name: "India" },
+//   { code: "US", name: "United States" },
+//   { code: "JP", name: "Japan" }
+// ]
+
+// select.addEventListener("change" ,()=>{
+
+//   div.innerHTML = "";
+//   let selctCountry = select.value
+
+
+//   country.forEach(val=>{
+//   if(val.code === selctCountry){
+//     div.innerHTML += `<p> country Code ${val.code} </p>`
+//   }
+//   })
+// })
