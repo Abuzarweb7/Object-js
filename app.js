@@ -66,8 +66,38 @@
 
 
 
+// const text = document.querySelector("#text");
+// const btn = document.querySelector("#btn");
+// const result = document.querySelector("#result");
 
 
+
+
+
+
+// btn.addEventListener("click" ,()=>{
+//   let frequncy = {};
+  
+// let word = text.value.toLowerCase().match(/\b\w+\b/g);  ;
+
+// if(word){
+//   for (let count of word) {
+
+//     if(frequncy[count]){
+// frequncy[count] += 1
+//     }
+//     else{
+//   frequncy[count] = 1
+// }
+
+
+// }
+// }
+// result.textContent = JSON.stringify(frequncy)
+
+
+
+// })
 
 
 
