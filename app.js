@@ -222,103 +222,93 @@
 
 // Q9
 
-// 9. Calculate Cart Total
-// Given an array of cart items ({name, price, quantity}), display a full cart with
-// totals using DOM.
-// const cart = document.querySelector("#cart");
-//     let item1Name = "Apple";
-//     let item1Price = 100;
-//     let item1Qty = 2;
-//     let item1Total = item1Price * item1Qty;
+  // const cart = document.querySelector("#cart");
 
-//     let item2Name = "Banana";
-//     let item2Price = 50;
-//     let item2Qty = 5;
-//     let item2Total = item2Price * item2Qty;
+  // const cartData = {
+  //   item1: { name: "Apple", price: 100, quantity: 2 },
+  //   item2: { name: "Banana", price: 50, quantity: 5 },
+  //   item3: { name: "Milk", price: 120, quantity: 1 }
+  // };
 
-//     let item3Name = "Milk";
-//     let item3Price = 120;
-//     let item3Qty = 1;
-//     let item3Total = item3Price * item3Qty;
+  // let item1Total = cartData.item1.price * cartData.item1.quantity;
+  // let item2Total = cartData.item2.price * cartData.item2.quantity;
+  // let item3Total = cartData.item3.price * cartData.item3.quantity;
 
-//     // Sabka total
-//     let grandTotal = item1Total + item2Total + item3Total;
+  // let grandTotal = item1Total + item2Total + item3Total;
 
-  
-//   cart .innerHTML  +=     "<p>" + item1Name + " - " + item1Price + " x " + item1Qty + " = " + item1Total + "</p>" +
-//       "<p>" + item2Name + " - " + item2Price + " x " + item2Qty + " = " + item2Total + "</p>" +
-//       "<p>" + item3Name + " - " + item3Price + " x " + item3Qty + " = " + item3Total + "</p>" +
-//       "<hr>" +
-//       "<h3>Total: " + grandTotal + "</h3>";
+  // cart.innerHTML +=
+  //   `<p>${cartData.item1.name} - ${cartData.item1.price} x ${cartData.item1.quantity} = ${item1Total}</p>` +
+  //   `<p>${cartData.item2.name} - ${cartData.item2.price} x ${cartData.item2.quantity} = ${item2Total}</p>` +
+  //   `<p>${cartData.item3.name} - ${cartData.item3.price} x ${cartData.item3.quantity} = ${item3Total}</p>` +
+  //   `<hr>` +
+  //   `<h3>Total: ${grandTotal}</h3>`;
 
 
 // Q10
 
-// const listDiv = document.getElementById("list");
-//     const fruitsCheckbox = document.getElementById("fruits");
-//     const veggiesCheckbox = document.getElementById("veggies");
+//  const listDiv = document.querySelector("#list");
+//   const fruitsCheckbox = document.querySelector("#fruits"); 
+//   const veggiesCheckbox = document.querySelector("#veggies");
 
-//     // Items
-//     const apple = "Apple";
-//     const banana = "Banana";
-//     const carrot = "Carrot";
-//     const spinach = "Spinach";
+ 
+//   const items = {
+//     fruit1: { type: "fruits", name: "Apple" },
+//     fruit2: { type: "fruits", name: "Banana" },
+//     veg1:   { type: "veggies", name: "Carrot" },
+//     veg2:   { type: "veggies", name: "Spinach" }
+//   };
 
-//     function showList() {
-//       listDiv.innerHTML = ""; // 
+//   function showList() {
+//     listDiv.innerHTML = ""; 
 
-//       if (fruitsCheckbox.checked) {
-//         listDiv.innerHTML += "<p>" + apple + "</p>";
-//         listDiv.innerHTML += "<p>" + banana + "</p>";
+//     if (fruitsCheckbox.checked) {
+//       if (items.fruit1.type === "fruits") {
+//         listDiv.innerHTML += `<p>${items.fruit1.name}</p>`;
 //       }
-
-//       if (veggiesCheckbox.checked) {
-//         listDiv.innerHTML += "<p>" + carrot + "</p>";
-//         listDiv.innerHTML += "<p>" + spinach + "</p>";
+//       if (items.fruit2.type === "fruits") {
+//         listDiv.innerHTML += `<p>${items.fruit2.name}</p>`;
 //       }
 //     }
 
-    
-//     showList();
+//     if (veggiesCheckbox.checked) {
+//       if (items.veg1.type === "veggies") {
+//         listDiv.innerHTML += `<p>${items.veg1.name}</p>`;
+//       }
+//       if (items.veg2.type === "veggies") {
+//         listDiv.innerHTML += `<p>${items.veg2.name}</p>`;
+//       }
+//     }
+//   }
+
 
     
-//     fruitsCheckbox.onchange = showList;
-//     veggiesCheckbox.onchange = showList;
 
 
 
     // Q11
+
+     
 // const input = document.querySelector("#input");
-// const list = document.querySelector("ol");
-// const fruits = ["Apple", "Mango", "Banana", "Orange", "Grapes"];
+// const list = document.querySelector("#list");
+// const fruits = [
+//   { name: "Apple", price: 100 },
+//   { name: "Banana", price: 50 },
+//   { name: "Carrot", price: 30 },
+//   { name: "Spinach", price: 20 },
+//   { name: "Milk", price: 80 }
+// ];
 
-// fruits.addEventListener ( 'input' , function(){
-
-// fruits.forEach(function(){
-//     input.value += `<li> ${fruits}</li>` 
-    
+// input.addEventListener ( "input" , ()=>{
+//   list.innerHTML = "";
+//   const search = input.value.toLowerCase();
+//   let filterArr = fruits.filter((item)=>{
+//    return item.name.includes(search);
+//  })
+// filterArr.forEach(item=>{
+//   list.innerHTML += `<li> ${item.name} - ${item.price}</li>`
 // })
 
 // })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Q12
 
 // const input = document.querySelector("#input");
