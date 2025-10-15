@@ -501,36 +501,59 @@
 
 
 // Q17
-// const list = document.querySelector(".list");
-// const categories = [
-//   {
-//     id: 1,
-//     name: "Electronics",
-//     children: [
-//       { id: 2, name: "Mobile", children: [] },
-//       { id: 3, name: "Laptop", children: [] }
-//     ]
-//   },
-//   {
-//     id: 4,
-//     name: "Clothes",
-//     children: [
-//       { id: 5, name: "Shirts", children: [] },
-//       { id: 6, name: "Pants", children: [] }
-//     ]
-//   }
-// ];
+  // const categories = {
+  //   Fruits: {
+  //     Citrus: {
+  //       Orange: {},
+  //       Lemon: {}
+  //     },
+  //     Berries: {
+  //       Strawberry: {},
+  //       Blueberry: {}
+  //     }
+  //   },
+  //   Vegetables: {
+  //     Leafy: {
+  //       Spinach: {},
+  //       Lettuce: {}
+  //     },
+  //     Root: {
+  //       Carrot: {},
+  //       Beetroot: {}
+  //     }
+  //   }
+  // };
+
+  // const selectBox = document.querySelector("#categorySelect");
+  // const loadButton = document.querySelector("#loadBtn");
+
+  
+  // function addOptions(categoryObject, depth) {
+  //   for (let name in categoryObject) {
+  //     const option = document.createElement("option");
+
+      
+  //     const indent = "  ".repeat(depth); //
+  //     option.textContent = indent + name;
+  //     option.value = name;
+
+  //     selectBox.appendChild(option);
+
+    
+  //     if (Object.keys(categoryObject[name]).length > 0) {
+  //       addOptions(categoryObject[name], depth + 1);
+  //     }
+  //   }
+  // }
 
 
+  // loadButton.addEventListener("click",  ()=>{
+   
+  //   selectBox.innerHTML = "";
 
-
-//     categories.forEach((val =>{
-//       list.innerHTML += `<li>${val.children[0].name}</li>`
-//       list.innerHTML += `<li>${val.children[1].name}</li>`
-//     }))
-            
-
-// function treeView = 
+  
+  //   addOptions(categories, 0);
+  // });
 
 
 
